@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:metal_price/view/home_screen.dart';
 
+import 'network/dio_helper.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  DioHelper.init();
   runApp(const MyApp());
 }
 
